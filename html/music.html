@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Store Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+/* Set font family and size */
+body {
+  
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #ffb3b3;
+  
+}
+
+/* Style the header */
+header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo h1 {
+  font-size: 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Style the main section */
+main {
+  padding: 40px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.song {
+ 
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.song img {
+  width: 70%;
+  height: 70%;
+  margin-bottom: 10px;
+}
+
+.song h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.song p {
+  margin-bottom: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li {
+  margin-left: 20px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Style the button */
+.button {
+  display: inline-block;
+  background-color: #ff0066;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1px;
+}
+.abc{
+display: flex;
+}
+
+/* Add responsive design */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .song-collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .song-collection {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Music Store</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Songs</a></li>
+        <li><a href="#">Artists</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="background-image">
+      <h2>Welcome to Our Music Store</h2>
+      <p>Explore our collection of songs and discover new music</p>
+    </div>
+    <section>
+      <h2>Song Collection</h2>
+
+      <div class="song-collection">
+<div class="abc">
+        <div class="song">
+          <img src="C:\Users\tajamre\Downloads\song1.jpg" alt="Song 1">
+          
+          <p>Song: All Too Well, Singer:Taylor Swift, Artist: Taylor Swift,
+Liz Rose, Album:Red and Red (Taylor's Version), Year:2012 and 2021</p>
+          <a href="#" class="button">Buy Now</a>
+        </div>
+        <div class="song">
+          <img src="C:\Users\tajamre\Downloads\song2.jpg" alt="Song 2">
+          
+          <p>Song:Arcade,Artist:Duncan Laurence,
+Written By: Wouter Hardy · Duncan Laurence · Will Knox · Joel Sjöö, Release: 2019, Album
+Small Town Boy</p>
+          <a href="#" class="button">Buy Now</a>
+        </div>
+        <div class="song">
+          <img src="C:\Users\tajamre\Downloads\song3.jpg" alt="Song 3" width=100%>
+          
+          <p> Artist: Armaan Malik,Released: 2020, Album: Control. Stripped,
+Artist: Armaan Malik, Album: Control. Stripped</p>
+          <a href="#" class="button">Buy Now</a>
+        </div>
+	   <div class="song">
+          <img src="C:\Users\tajamre\Downloads\song4.jpg" alt="Song 4">
+         
+          <p>Released: 2017,Featured artist: Daddy Yankee, Artist: Luis Fonsi, Album: Despacito, Awards: Latin Grammy Award for Record of the Year, MORE</p>
+          <a href="#" class="button">Buy Now</a>
+        </div>
+</div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <ul>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Store</a></li>
+      <li><a href="#">Career</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

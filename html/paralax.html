@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parallax Website</title>
+  <style>
+/* Reset default margin and padding for body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set full width and height for each section */
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Set different background images for each section */
+#section1 {
+  background-image: url("image1.jpg");
+  background-size: cover;
+}
+
+#section2 {
+  background-image: url("image2.jpg");
+  background-size: cover;
+}
+
+#section3 {
+  background-image: url("image3.jpg");
+  background-size: cover;
+}
+
+#section4 {
+  background-image: url("image4.jpg");
+  background-size: cover;
+}
+
+/* Create the parallax effect using background-position */
+#section1 {
+  background-position: center;
+}
+
+#section2 {
+  background-position: center -100px;
+}
+
+#section3 {
+  background-position: center -200px;
+}
+
+#section4 {
+  background-position: center -300px;
+}
+
+/* Center text in each section */
+h1, p {
+  text-align: center;
+}
+
+/* Add some padding to each section to create some space */
+#section1 {
+  padding-top: 100px;
+}
+
+#section2 {
+  padding-top: 200px;
+}
+
+#section3 {
+  padding-top: 300px;
+}
+
+#section4 {
+  padding-top: 400px;
+}
+</style>
+</head>
+<body>
+  <section id="section1">
+    <h1>Section 1</h1>
+    <p>Text for section 1</p>
+  </section>
+  <section id="section2">
+    <h1>Section 2</h1>
+    <p>Text for section 2</p>
+  </section>
+  <section id="section3">
+    <h1>Section 3</h1>
+    <p>Text for section 3</p>
+  </section>
+  <section id="section4">
+    <h1>Section 4</h1>
+    <p>Text for section 4</p>
+  </section>
+</body>
+</html>
