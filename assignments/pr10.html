@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pr10</title>
+    <style>
+        body {
+            background-color: rgb(229, 167, 201);
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.cart a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.product {
+  width: 300px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product h3 {
+  margin: 10px;
+}
+
+.product p {
+  margin: 10px;
+  font-weight: bold;
+}
+
+.product button {
+  margin: 10px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+        </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+            <h1>BUDGET BASKET</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart">
+        <a href="#">My Cart (0)</a>
+      </div>
+    </header>
+    <main>
+      <section class="featured-products">
+        <h2>Fruits</h2>
+        <div class="product">
+          <img src="a1.jpg" alt="Product 1">
+          <h3>Watermelon Fresh, Striped 1 Piece (500 - 900 g)</h3>
+          <p>
+            ₹57.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="a2.jpg" alt="Product 2">
+          <h3>
+            Fresh Kiwi Fruit - Imported. 3 Pieces
+           </h3>
+          <p> ₹58.00</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="a3.jpg" alt="Product 3">
+          <h3>
+            Fresh Apple, Royal Gala, 4 Pieces Box
+           </h3>
+          <p> ₹117</p>
+          <button>Add to Cart</button>
+        </div>
+      </section>
+      <section class="new-arrivals">
+        <h2>Veggies</h2>
+        <div class="product">
+          <img src="b1.jpg" alt="Product 4">
+          <h3>Fresh Onion 1KG</h3>
+          <p>₹40</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="b2.jpg" alt="Product 5">
+          <h3>Tomato 1KG</h3>
+          <p>₹35</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="product">
+          <img src="b3.jpg" alt="Product 6">
+          <h3>Fresh lemom 1kg</h3>
+          <p>₹59</p>
+          <button>Add to Cart</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
