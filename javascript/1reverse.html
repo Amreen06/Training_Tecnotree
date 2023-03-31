@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Reverse Words</title>
+    <style>
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+#output {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Reverse Words</h1>
+      <p>Enter a string:</p>
+      <input id="input" type="text">
+      <button id="reverse-button">Reverse Words</button>
+      <p id="output"></p>
+    </div>
+    <script>
+
+const input = document.getElementById("input");
+const reverseButton = document.getElementById("reverse-button");
+const output = document.getElementById("output");
+
+function reverseWords(str) {
+  return str.split(" ").reverse().join(" ");
+}
+
+reverseButton.addEventListener("click", () => {
+  const str = input.value;
+  const reversed = reverseWords(str);
+  output.textContent = reversed;
+});
+
+
+    </script>
+  </body>
+</html>

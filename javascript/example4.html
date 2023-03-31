@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My HTML Page</title>
+    <style>
+      .selected {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>List</h1>
+    <ul id="myList">
+      <li>apple</li>
+      <li>orange</li>
+      <li>mango</li>
+    </ul>
+
+    <script>
+      
+      const myList = document.getElementById('myList');
+
+      
+      myList.addEventListener('click', function(event) {
+        
+        const listItems = myList.getElementsByTagName('li');
+        for (let i = 0; i < listItems.length; i++) {
+          listItems[i].classList.remove('selected');
+        }
+
+        
+        const listItem = event.target;
+        listItem.classList.add('selected');
+      });
+    </script>
+  </body>
+</html>

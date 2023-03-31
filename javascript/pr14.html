@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Online Education Platform</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f0f4;
+		}
+		h1 {
+			text-align: center;
+			color: #333333;
+		}
+		select {
+			font-size: 16px;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color: #aabce1;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+		}
+		#course-details {
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #dee9f0;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+		}
+	</style>
+	<script>
+		function displayCourses() {
+			
+			var selectElement = document.getElementById("courses");
+			
+			var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+			
+			var courseDetailsElement = document.getElementById("course-details");
+			courseDetailsElement.innerHTML = "Course Name: " + selectedOption + "<br>Course Description: This course will teach you the basics of web development.";
+		}
+	</script>
+</head>
+<body>
+	<h1>Welcome to our Online Education Platform</h1>
+	<p>Please select a course:</p>
+	<select id="courses" onchange="displayCourses()">
+		<option value="Web Development">Web Development</option>
+		<option value="Data Science">Data Science</option>
+		<option value="Graphic Design">Graphic Design</option>
+	</select>
+	<div id="course-details"></div>
+</body>
+</html>

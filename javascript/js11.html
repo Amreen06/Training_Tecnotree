@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>p11</title>
+  </head>
+  <body>
+    <h3>vegetables</h3>
+    <ul id="myList">
+      <li>potato</li>
+      <li>tomato</li>
+      <li>beans</li>
+    </ul>
+
+    <script>
+      
+      const myList = document.getElementById('myList');
+
+      
+      myList.addEventListener('click', function(event) {
+        
+        const listItem = event.target;
+
+        
+        alert(`You clicked on ${listItem.textContent}`);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Guess the Number Game</title>
+  </head>
+  <body><center>
+    <p>Guess a number between 1 and 10</p>
+    <form>
+      <input type="text" id="userGuess"><br>
+      <input type="button" value="Guess" onclick="checkGuess()">
+    </form>
+    <p id="message"></p></center>
+    <script>
+      function checkGuess() {
+        let randomNumber = Math.floor(Math.random() * 10) + 1;
+        let userGuess = document.getElementById("userGuess").value;
+        if(userGuess == randomNumber) {
+          document.getElementById("message").innerHTML = "Good Work!";
+        } else {
+          document.getElementById("message").innerHTML = "Not matched. The number was " + randomNumber;
+        }
+      }
+    </script>
+  </body>
+</html>

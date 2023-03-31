@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Merge Sort Algorithm</title>
+    <style>
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+#output {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Merge Sort Algorithm</h1>
+      <p>Enter a list of integers separated by commas:</p>
+      <input id="input" type="text">
+      <button id="sort-button">Sort List</button>
+      <p id="output"></p>
+    </div>
+    <script>
+
+const input = document.getElementById("input");
+const sortButton = document.getElementById("sort-button");
+const output = document.getElementById("output");
+
+function mergeSort(arr) {
+  if (arr.length <= 1) {
+    return arr;
+  }
+  const mid = Math.floor(arr.length / 2);
+  const left = arr.slice(0, mid);
+  const right = arr.slice(mid);
+  return merge(mergeSort(left), mergeSort(right));
+}
+
+function merge(left, right) {
+  const result = [];
+  let leftIndex = 0;
+  let rightIndex = 0;
+  while (leftIndex < left.length && rightIndex < right.length) {
+    if (left[leftIndex] < right[rightIndex]) {
+      result.push(left[leftIndex]);
+      leftIndex++;
+    } else {
+      result.push(right[rightIndex]);
+      rightIndex++;
+    }
+  }
+  return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+}
+
+sortButton.addEventListener("click", () => {
+  const inputValues = input.value.split(",").map(val => Number(val.trim()));
+  const sortedValues = mergeSort(inputValues);
+  output.textContent = `Sorted list: ${sortedValues.join(", ")}`;
+});
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Intersection of Two Arrays</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"] {
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      
+      button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      button:hover {
+        background-color: #3e8e41;
+      }
+      
+      .result {
+        margin-top: 20px;
+      }
+      body{
+        background-image: url(https://media.tenor.com/f0wBEby1q3gAAAAi/borboletas-butterflies.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* text-align: center; */
+        font-size: large;
+        font-style: italic;
+        
+        
+      }
+      p{
+        color: rgb(0, 0, 0);
+        text-size-adjust: 40%;
+       
+      }
+      label{
+        color: rgb(0, 0, 0);
+      }
+      .a{
+        max-width: 400px;
+        border: 2px solid black;
+        padding-left: 50px;
+        background-color: rgba(234, 125, 227, 0.514);
+      }
+    </style>
+  </head>
+  <body><form class="a">
+    <h1>Intersection of Two Arrays</h1>
+    <form onsubmit="findIntersection(event)">
+      <label for="array1">Enter the first array:</label>
+      <input type="text" id="array1" name="array1" required>
+      <label for="array2">Enter the second array:</label>
+      <input type="text" id="array2" name="array2" required>
+      <button type="submit">Find Intersection</button>
+    
+    <div class="result">
+      <p>Intersection of the two arrays:</p>
+      <ul id="result"></ul>
+    </div></body></form></form>
+    <script>
+      function findIntersection(event) {
+        event.preventDefault();
+        const array1 = document.getElementById('array1').value.split(',').map(value => value.trim());
+        const array2 = document.getElementById('array2').value.split(',').map(value => value.trim());
+        const result = intersection(array1, array2);
+        const resultElement = document.getElementById('result');
+        resultElement.innerHTML = result.length > 0 ? result.map(element => `<li>${element}</li>`).join('') : '<li>No common elements found.</li>';
+      }
+
+      function intersection(array1, array2) {
+        // Create a Set from array1 to remove duplicates
+        const set1 = new Set(array1);
+
+        // Use filter to return a new array that contains only elements also found in array2
+        const result = array2.filter(element => set1.has(element));
+
+        return result;
+      }
+    </script>
+  </body>
+</html>

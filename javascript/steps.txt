@@ -1,0 +1,15 @@
+the steps to run the ReactJS and NodeJS in a single weather app demo:
+
+Open two terminal windows or tabs and navigate to the project folder.
+In one of the terminal windows, navigate to the client folder by running cd client.
+Start the ReactJS application by running npm start. This will start the development server and open a new tab in your default browser at http://localhost:3000.
+In the other terminal window, navigate to the server folder by running cd ../server (assuming you are still inside the client folder in the first terminal window).
+Start the NodeJS server by running node index.js. This will start the server on http://localhost:4000.
+Now, you should be able to access the weather app in your browser at http://localhost:3000.
+Enter the latitude and longitude of the location you want to get the weather for and click on the "Get Weather" button.
+The ReactJS application will make a request to the NodeJS server, which will in turn make a request to the OpenWeatherMap API to get the weather data for that location.
+Once the weather data is received, the NodeJS server will send it back to the ReactJS application, which will update the UI with the weather information.
+
+
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Binary Search</title>
+   <style>
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #5d0b46;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e071da;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+}
+body{
+        background-image: url(https://media.tenor.com/f0wBEby1q3gAAAAi/borboletas-butterflies.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* text-align: center; */
+        font-size: large;
+        font-style: italic;
+        box-shadow: 200px;
+        
+        
+      }
+      .a{
+        max-width: 400px;
+        border: 2px solid black;
+        padding-left: 50px;
+        background-color: rgba(234, 125, 227, 0.514);
+      }
+
+
+   </style>
+  </head>
+  <body><form class="a">
+    <div class="container">
+      <h1>Binary Search</h1>
+      <p>Enter comma-separated sorted numbers:</p>
+      <input id="numbers-input" type="text">
+      <p>Enter number to search:</p>
+      <input id="search-input" type="text">
+      <button id="search-button">Search</button>
+      <p id="result"></p>
+    </div></form>
+    <script>
+
+const numbersInput = document.getElementById("numbers-input");
+const searchInput = document.getElementById("search-input");
+const searchButton = document.getElementById("search-button");
+const result = document.getElementById("result");
+
+function binarySearch(array, target) {
+  let left = 0;
+  let right = array.length - 1;
+
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+    const value = array[mid];
+
+    if (value === target) {
+      return mid;
+    } else if (value < target) {
+      left = mid + 1;
+    } else {
+      right = mid - 1;
+    }
+  }
+
+  return -1;
+}
+
+searchButton.addEventListener("click", () => {
+  const numbersArray = numbersInput.value.split(",").map(Number);
+  const target = parseInt(searchInput.value, 10);
+  const resultIndex = binarySearch(numbersArray, target);
+
+  if (resultIndex === -1) {
+    result.textContent = "Number not found";
+  } else {
+    result.textContent = `Number found at index ${resultIndex}`;
+  }
+});
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>p6</title>
+    <style>
+      body {
+        background-color: rgb(252, 90, 90);
+      }
+      .gray-background {
+        background-color: rgb(113, 229, 237);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="my-paragraph">Sport pertains to any form of physical activity or game,[1] often competitive and/or organized, that aims to use, maintain, or improve physical ability and skills while providing enjoyment to participants and, in some cases, entertainment to spectators.</p>
+    <button id="my-button">Click me</button>
+    <button id="my-other-button">Click me too</button>
+
+    <script>
+      
+      const myButton = document.getElementById("my-button");
+      const myOtherButton = document.getElementById("my-other-button");
+      const myParagraph = document.getElementById("my-paragraph");
+
+      
+      myButton.addEventListener("click", function() {
+       
+        myParagraph.textContent = " Cricket is a team sport played between two teams of eleven players each.";
+      });
+
+      myOtherButton.addEventListener("click", function() {
+        
+        myParagraph.textContent = "Volleyball is a non-invasive sports game of a net type where there are two competing teams of six members who control the ball with parts of their body.";
+      });
+
+      
+      const myNewButton = document.createElement("button");
+      myNewButton.textContent = "Click me three";
+      document.body.appendChild(myNewButton);
+
+      myNewButton.addEventListener("click", function() {
+       
+        document.body.classList.toggle("gray-background");
+      });
+    </script>
+  </body>
+</html>

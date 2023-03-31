@@ -1,0 +1,44 @@
+The entities in the above queries are:
+
+BOOK
+user
+REVIEWS
+
+
+The relations between these entities are:
+
+A BOOK can have multiple comments, and each comment belongs to a particular BOOK.
+A user can create multiple comments, and each comment belongs to a particular user.
+A BOOK can have multiple reviews, and each review belongs to a particular BOOK.
+A user can create multiple reviews, and each review belongs to a particular user.
+
+
+//BOOK
+
+{
+  _id: ObjectId,
+  title: String,
+  content: String,
+  author: String,
+  date: Date,
+  comments: [CommentSchema],
+  tags: [String],
+  category: String
+}
+//user 
+{
+  _id: ObjectId,
+  name: String,
+  email: String,
+  password: String,
+  avatar: String,
+  date: Date
+}
+//REVIEWS
+{
+  _id: ObjectId,
+  post_id: ObjectId,
+  user_id: ObjectId,
+  content: String,
+  date: Date
+}

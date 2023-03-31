@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul id="myList">
+  <li>Apple</li>
+  <li>orange</li>
+</ul>
+<script>
+var newItem = document.createElement("li");
+newItem.textContent = "banana";
+
+var list = document.getElementById("myList");
+
+list.appendChild(newItem);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bubble Sort</title>
+    <style>
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+#output {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Bubble Sort</h1>
+      <p>Enter a list of numbers, separated by commas:</p>
+      <input id="input" type="text">
+      <button id="sort-button">Sort</button>
+      <p id="output"></p>
+    </div>
+    <script >
+
+const input = document.getElementById("input");
+const sortButton = document.getElementById("sort-button");
+const output = document.getElementById("output");
+
+function bubbleSort(arr) {
+  const n = arr.length;
+  for (let i = 0; i < n - 1; i++) {
+    for (let j = 0; j < n - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        const temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+sortButton.addEventListener("click", () => {
+  const str = input.value;
+  const arr = str.split(",").map(Number);
+  const sorted = bubbleSort(arr);
+  output.textContent = sorted.toString();
+});
+
+
+
+    </script>
+  </body>
+</html>

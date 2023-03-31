@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Photography Site</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global styles */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+
+
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      font-weight: 700;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #333;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    /* Header styles */
+    header {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .logo h1 {
+      font-size: 30px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+
+    /* Work section styles */
+    #work {
+      padding: 4rem 8rem;
+
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .view-work {
+      margin-bottom: 2rem;
+    }
+
+    .work-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .work-grid img {
+      width: calc(33.3333% - 1rem);
+      margin-bottom: 1rem;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 2rem 0;
+    }
+
+    footer ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+
+    footer li {
+      margin-right: 2rem;
+      font-size: 1.1rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        height: 40vh;
+      }
+
+      .header-image {
+        max-width: 90%;
+      }
+
+      #work {
+        padding: 2rem 4rem;
+      }
+
+      .work-grid img {
+        width: calc(50% - 1rem);
+      }
+
+      footer li {
+        margin-right: 1rem;
+      }
+    }
+
+
+    .hero-image {
+      background-color: #cccccc;
+      background-size: cover;
+
+
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .contact-info {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-info h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .contact-info p {
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1>Photography</h1>
+
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Songs</a></li>
+        <li><a href="#">Artists</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="hero-image">
+
+
+
+    <h3>Photography is the art, application, and practice of creating durable images by recording light, either
+      electronically by means of an image sensor, or chemically by means of a light-sensitive material such as
+      photographic film.</h3>
+    <section id="work">
+      <div class="container">
+        <h2>My Work</h2>
+        <button class="view-work">View My Work</button>
+        <div class="work-grid">
+          <img src="ph2.jpg" alt="Work 1">
+          <img src="ph3.jpg" alt="Work 2">
+          <img src="ph4.jpg" alt="Work 3" height="200px">
+          <img src="burger.jpg" alt="Work 1" height="200px">
+          <img src="lan1.jpg" alt="Work 2">
+          <img src="ph1.jpg" alt="Work 3" height="200px">
+
+        </div>
+      </div>
+    </section>
+</body>
+<script>
+  alert("welcome to my photography site");
+</script>
+<footer>
+  <div class="contact-info">
+    <h3>Contact Us</h3>
+    <p>MUMBAI<br>
+      LONAVLA, INDAI<br>
+      Phone: (123) 456-7890<br>
+      Email: @photodrop.com</p>
+  </div>
+</footer>
+
+</html>

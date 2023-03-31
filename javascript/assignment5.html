@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>rotating string</title>
+</head>
+<body>
+    <script>
+let str = 'Koding && Learning';
+function rotateString(str) {
+  let lastLetter = str.charAt(str.length - 1);
+  str = str.slice(0, str.length - 1);
+  str = lastLetter + str;
+  return str;
+}
+
+
+let rotations = 0;
+while (rotations < 10) {
+  str = rotateString(str);
+  console.log(str);
+  rotations++;
+}
+
+
+    </script>
+</body>
+</html>

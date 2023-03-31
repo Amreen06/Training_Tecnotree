@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pr3</title>
+    <style>
+	/* General Styles */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+nav li {
+  margin-left: 30px;
+}
+
+
+/* About Me Styles */
+#about-me {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about-me img {
+  border-radius: 60%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+ 
+}
+
+/* Projects Styles */
+#projects {
+  padding: 50px;
+  margin-top: 0;
+}
+
+
+
+/* Skills Styles */
+#skills {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+/* Resume Styles */
+#resume {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resume p {
+  margin: 0;
+  margin-left: 20px;
+}
+
+/* Contact Styles */
+#contact {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+  display: flex;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #444;
+}
+.abc{
+text-align: center;
+}
+
+    </style>
+</head>
+<body>
+	<header>
+		<h1>My Portfolio</h1>
+		<nav>
+			<ul>
+				<li><a href="#about-me">About Me</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#resume">Resume</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="about-me">
+		<h2>About Me</h2>
+		<img src="photo.jpg" alt="Profile Picture">
+		<p>To work in a professional
+            work driven environment
+            that motivates me to utilize
+            my potential efficaciously
+            with ample opportunities for
+            the up-gradation and growth
+            of the company and myself.</p>
+	</section>
+	
+	<section id="projects">
+		<h2>Projects</h2>
+		<div class="project">
+			<h3>Project 1</h3>
+			
+			<p>Technical information Portal website to manage the details of News, Jobs, Internships,
+                Courses and Placement preparation.
+                Components used: operating system-windows XP and above, software- XAMPP/WAMP</p>
+		</div>
+		<div class="project">
+			<h3>Project 2</h3>
+			<p>Myntra Hacker ramp - Gamify, built a website to represent idea in gamify section for Myntra
+                shopping app
+                Components used: IDE- Visual Studio, Web browser- Google Chrome, Microsoft Edge,
+                Mozilla </p>
+		</div>
+	</section>
+	
+	<section id="skills">
+		<h2>Skills</h2>
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>MySQL</li>
+            <li>C programming </li>
+            <li>c++ programming </li>
+		</ul>
+	</section>
+	
+	<section id="resume">
+		<h2>Resume</h2><br>
+        <p><a href="resume.pdf">Download my resume</a></p>
+	</section>
+	
+	
+		<h2 class="abc">Contact</h2>
+       
+		<form id="contact">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name"><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message"></textarea><br>
+			<input type="submit" value="Submit">
+		</form>
+
+</body>
+</html>

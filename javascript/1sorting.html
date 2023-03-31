@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Sort Objects by Property</title>
+    <style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+      
+      th {
+        background-color: gray;
+        color: white;
+      }
+      
+      #property-select {
+        margin-right: 10px;
+      }
+      </style>
+  </head>
+  <body>
+    <h1>Sort Objects by Property</h1>
+    <p>Select a property to sort the array of objects:</p>
+    <select id="property-select">
+      <option value="name">Name</option>
+      <option value="age">Age</option>
+      <option value="city">City</option>
+    </select>
+    <button onclick="sortArray()">Sort</button>
+    <table id="myTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>32</td>
+          <td>New York</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>28</td>
+          <td>Los Angeles</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>45</td>
+          <td>Chicago</td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+
+function sortArray() {
+  const select = document.getElementById("property-select");
+  const property = select.value;
+  const table = document.getElementById("myTable");
+  const tbody = table.getElementsByTagName("tbody")[0];
+  const rows = Array.from(tbody.rows);
+
+  rows.sort((row1, row2) => {
+    const value1 = row1.cells[propertyMap[property]].textContent;
+    const value2 = row2.cells[propertyMap[property]].textContent;
+    if (value1 < value2) {
+      return -1;
+    } else if (value1 > value2) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+
+  while (tbody.firstChild) {
+    tbody.removeChild(tbody.firstChild);
+  }
+
+  rows.forEach(row => {
+    tbody.appendChild(row);
+  });
+}
+
+const propertyMap = {
+  name: 0,
+  age: 1,
+  city: 2
+};
+
+
+
+    </script>
+  </body>
+</html>

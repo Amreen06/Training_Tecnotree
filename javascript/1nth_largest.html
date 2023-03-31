@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Nth Largest Element</title>
+    <style>
+        .container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Nth Largest Element</h1>
+      <p>Enter comma-separated numbers:</p>
+      <input id="numbers-input" type="text">
+      <p>Enter n:</p>
+      <input id="n-input" type="text">
+      <button id="find-button">Find Nth Largest Element</button>
+      <p id="result"></p>
+    </div>
+    <script>
+
+const numbersInput = document.getElementById("numbers-input");
+const nInput = document.getElementById("n-input");
+const findButton = document.getElementById("find-button");
+const result = document.getElementById("result");
+
+function findNthLargestElement(array, n) {
+  const sortedArray = array.sort((a, b) => b - a);
+  return sortedArray[n - 1];
+}
+
+findButton.addEventListener("click", () => {
+  const numbersArray = numbersInput.value.split(",").map(Number);
+  const n = parseInt(nInput.value, 10);
+  const nthLargestElement = findNthLargestElement(numbersArray, n);
+  result.textContent = `The ${n}th largest element is ${nthLargestElement}`;
+});
+
+
+    </script>
+  </body>
+</html>
