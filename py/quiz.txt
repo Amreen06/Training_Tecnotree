@@ -1,3 +1,0 @@
- Who developed Python Programming Language?,a) Wick van Rossum,b) Rasmus Lerdorf,c)Niene Stom ,d)  Guido van Rossum,D
-Which type of Programming does Python support?,a) object-oriented programming,b) structured programming,c) functional programming,d) all of the mentioned,D
-Which of the following is the correct extension of the Python file?,a) .python,b) .pl,c) .py,d) .p,C
