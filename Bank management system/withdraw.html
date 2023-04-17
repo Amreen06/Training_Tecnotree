@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Withdraw Funds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(d6.gif);
+            background-repeat: no-repeat;
+            background-size:cover;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e90ff;
+        }
+
+        form {
+
+            width: 50%;
+
+            margin-left: 25%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            background-color: #ffffffbf;
+
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+            border-radius: 10px;
+
+            padding-bottom: 30px;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            padding: 8px 20px;
+            background-color: #1e90ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0077b3;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <form method="post" action="withdraw.php" onsubmit="return validateWithdrawal()">
+        <h1>Withdraw Funds</h1>
+        <label for="account_number">Account Number:</label>
+        <input type="text" name="account_number" id="account_number"><br><br>
+        <label for="amount">Amount:</label>
+        <input type="text" name="amount" id="amount"><br><br>
+        <input type="submit" value="Withdraw">
+    </form>
+
+    <script>
+        function validateWithdrawal() {
+            var accountNumber = document.getElementById("account_number").value;
+            var amount = parseFloat(document.getElementById("amount").value);
+            
+            // Retrieve account balance from localStorage
+            var account = JSON.parse(localStorage.getItem(accountNumber));
+            var balance = account.balance;
+        
+            if (amount > balance) {
+                alert("Insufficient balance!");
+                return false;
+            }
+            alert("Withdrawal successful!");
+        
+            // Deduct amount from user's account and store updated balance in localStorage
+            balance -= amount;
+            localStorage.setItem(accountNumber, JSON.stringify({ balance: balance }));
+        
+            return true;
+        }
+        
+    </script>
+</body>
+
+</html>
