@@ -1,0 +1,726 @@
+ .b1 {
+  background-color: #f8a2f296;
+  color: white;
+  font-size: 16px;
+  padding: 10px 33px;
+  border: 2px solid black;
+  border-radius: 120px;
+  
+  text-align: center;
+  display: flex;
+  box-shadow: black 2px 2px ;
+} 
+.b2 {
+  background-color: #f8a2f296;
+  color: white;
+  font-size: 16px;
+  padding: 12px 35px;
+  border: 2px solid black;
+  border-radius: 120px;
+ display: flex;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  box-shadow: black 2px 2px ;
+} 
+/* h3{
+  text-align: left;
+} */
+body{
+  margin-top: 80px; 
+  background-color: rgb(233, 172, 243); 
+ /* background-image: url(C:\Users\tajamre\Downloads\food.gif); */
+  background-size: fill;  
+ /* background-image: url(C:\Users\tajamre\Downloads\g7.gif); */
+}
+ /* background-image: url(C:\Users\tajamre\Downloads\clock.gif); */
+ /* background-image: url(C:\Users\tajamre\Downloads\g4.gif); */
+ /* background-repeat: no-repeat; 
+
+}
+
+form {
+  max-width: 200px;
+  padding: 20px;
+  background-color: rgb(247, 170, 233);
+  border-radius: 5px;
+  border-radius: 11px;
+  box-shadow: 2px 2px 2px;}
+
+  /* .box{
+    margin: 50px;
+    text-align: center;
+    background-color: darkgray;
+  }  */
+ /* .ab{
+margin: 10px;
+}  */
+/* .abc{
+  background-color: rgb(163, 232, 235);
+  padding: 11px;
+  cursor: pointer;
+
+} */
+/* .abcd{
+  background-color: rgb(163, 232, 235);
+  padding: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+
+} */
+/* .qw{
+  color: azure;
+  text-shadow: white;
+} */
+/* #zz{
+  color: white;
+} */
+/* .asd{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: bisque;
+  border-radius: 20px;
+  box-shadow: black 2px 2px ;
+  display:inline-table;
+} */
+/* h1{
+  color: white;
+} */
+/* .zxc{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: bisque;
+  border-radius: 20px;
+  box-shadow: black 2px 2px ;
+} */
+.azq{
+    
+    margin: 0px;
+    padding: 10px;
+    background-color:rgba(173, 125, 181, 0.395);
+    
+    border-radius: 100%;
+    box-shadow: black 2px 2px ;
+} 
+/* form{
+  max-width: 200px;
+} */
+/* form{
+  background-color: #6cf0c2;
+}
+.App {
+  padding: 30px;
+}
+
+.input {
+  padding: 7px 8px;
+  width: 300px;
+  font-size: 16px;
+  font-family: caption; 
+}
+
+.checkbox-container {
+  margin: 20px 0;
+}
+
+.button {
+  padding: 7px 30px;
+}
+
+.app {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 50vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  
+}
+  
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+.a{
+  padding: 10px;
+
+}
+.b{
+  padding: 20px;
+}
+.aa{
+  max-width: 200px;
+}
+body {
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  color: #333;
+  font-size: 36px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}*/
+
+/*project2*/
+/* .at{
+  color:white;
+}
+
+
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+} */
+
+
+/*program 4*/
+
+/* .App {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #cd9cf23a 0%, #f6f3ff3e 100%);
+  
+}
+
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  width: 50%;
+  border: none;
+  padding: 10px;
+  background-color: #cd9cf2;
+}
+
+.search-button {
+  background-image: linear-gradient(
+    to right,
+    #f78ca0 0%,
+    #f9748f 19%,
+    #fd868c 60%,
+    #fe9a8b 100%
+  );
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.recipes {
+  display: grid;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.azq{
+    
+  margin: 0px;
+  padding: 10px;
+  background-color:rgba(173, 125, 181, 0.395);
+  
+  border-radius: 100%;
+  box-shadow: black 2px 2px ;
+} 
+body{ 
+  margin-top: 80px; 
+  background-color: rgb(233, 172, 243);  
+ background-image: url(C:\Users\tajamre\Downloads\food.gif);
+
+} */
+
+/*program5*/
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+.app {
+  background-image: url('C:\Users\tajamre\Downloads\w1.gif');
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+
+.app.warm {
+  background-image: url('C:\Users\tajamre\Downloads\w1.gif');
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  padding: 25px;
+}
+
+.search-box {
+  width: 50%;
+  margin-top:50px;
+}
+
+.search-box .search-bar {
+  display: block;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0, 0, 0, 0.2);
+  
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.location-box .location {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  
+}
+
+.location-box .date {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+
+  border-radius: 16px;
+
+  padding: 15px 25px;
+
+  color: #FFF;
+  font-size: 102px;
+  font-weight: 900;
+  text-align: center;
+  
+}
+
+.weather-box .weather {
+  color: #FFF;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+} */
+
+
+/*program 6*/
+
+/* .tmp {
+  font-size: 36px;
+  margin: 10px;
+}
+.bc {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #54072a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.bc:hover {
+  background-color: #3e8e41;
+  cursor: pointer;
+}
+form{
+    margin: 200px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color:rgba(241, 34, 99, 0.281);
+    border: 1px solid black;
+    box-shadow: black 2px 2px ;
+}
+body{
+  background-image: url('C:\Users\tajamre\Downloads\t2.gif');
+  background-size:fill ;
+} */
+
+
+/*program 7*/
+/* .todo-list {
+  background-color: #3d6d72;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+form {
+  display: flex;
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+button[type="submit"] {
+  background-color: #008cba;
+  color: #f0f4f5;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #3d6d729f;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+li span {
+  flex-grow:1;
+}
+button {
+  background-color: #d9534f;
+  color: #5b0b0b;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+body{
+  background-image: url('C:\Users\tajamre\Downloads\too.gif');
+  background-size:fill ;
+}
+h1{
+  color: white;
+  font-style: italic;
+} 
+ */
+
+/*Program 8*/
+/* body {
+	background: white;
+	margin: 0;
+}
+.tiles {
+	margin: 48px auto;
+	width: max-content;
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	gap: 16px;
+	box-sizing: border-box;
+}
+.tile {
+	height: 100px;
+	background: #111111;
+	border: 5px solid #444444;
+	cursor: pointer;
+}  */ 
+
+/*PROGRAM 8*/
+ /* .calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-right: 50%;
+  padding: 10px;
+  background-color: #4963a889;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.display {
+  grid-column: 1 / -1;
+  font-size: 24px;
+  padding: 20px;
+  text-align: right;
+  background-color: #33438979;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+body{
+  background-image: url(C:\Users\tajamre\Downloads\cal.gif);
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: right;
+  background-color: #c9c2c2;
+
+} */
+
+/*PROGRAM 9*/
+
+ /* * {
+   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url(C:\Users\tajamre\Downloads\g5.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header h2 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 10px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.center h2 {
+  margin: 0;
+}
+
+.center p {
+  margin: 10px 0;
+}
+
+.center a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.gallery {
+  padding: 50px;
+}
+
+.gallery h2 {
+  margin: 0;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.gallery img {
+  width: 100%; 
+  height: auto;
+  border-radius: 65px;
+}
+
+
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info h3 {
+  margin: 0;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+form {
+  max-width: 1000px;
+  background-color: rgb(133, 129, 132);
+  border-radius: 5px;
+  border-radius: 11px;
+  box-shadow: 2px 2px 2px;
+
+} */
+
+
+/* PROGRAM 11*/
+
+

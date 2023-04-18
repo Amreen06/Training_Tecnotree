@@ -1,0 +1,144 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+   
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+   
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
+
+<!-- 
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>pr8</title>
+	<style>
+        body {
+	background: white;
+	margin: 0;
+}
+
+.tiles {
+	margin: 48px auto;
+	width: max-content;
+	display: grid;
+	grid-template-columns: repeat(4, 100px);
+	gap: 16px;
+	box-sizing: border-box;
+}
+
+.tile {
+	height: 100px;
+	background: #111111;
+	border: 5px solid #444444;
+	cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+	<div class="tiles"></div>
+    <script>
+
+const tilesContainer = document.querySelector(".tiles");
+const colors = ["aqua", "aquamarine", "crimson", "blue", "dodgerblue", "gold", "greenyellow", "teal"];
+const colorsPicklist = [...colors, ...colors];
+const tileCount = colorsPicklist.length;
+
+// Game state
+let revealedCount = 0;
+let activeTile = null;
+let awaitingEndOfMove = false;
+
+function buildTile(color) {
+	const element = document.createElement("div");
+
+	element.classList.add("tile");
+	element.setAttribute("data-color", color);
+	element.setAttribute("data-revealed", "false");
+
+	element.addEventListener("click", () => {
+		const revealed = element.getAttribute("data-revealed");
+
+		if (
+			awaitingEndOfMove
+			|| revealed === "true"
+			|| element == activeTile
+		) {
+			return;
+		}
+
+		// Reveal this color
+		element.style.backgroundColor = color;
+
+		if (!activeTile) {
+			activeTile = element;
+
+			return;
+		}
+
+		const colorToMatch = activeTile.getAttribute("data-color");
+
+		if (colorToMatch === color) {
+			element.setAttribute("data-revealed", "true");
+			activeTile.setAttribute("data-revealed", "true");
+
+			activeTile = null;
+			awaitingEndOfMove = false;
+			revealedCount += 2;
+
+			if (revealedCount === tileCount) {
+				alert("You win! Refresh to start again.");
+			}
+
+			return;
+		}
+
+		awaitingEndOfMove = true;
+
+		setTimeout(() => {
+			activeTile.style.backgroundColor = null;
+			element.style.backgroundColor = null;
+
+			awaitingEndOfMove = false;
+			activeTile = null;
+		}, 1000);
+	});
+
+	return element;
+}
+
+
+for (let i = 0; i < tileCount; i++) {
+	const randomIndex = Math.floor(Math.random() * colorsPicklist.length);
+	const color = colorsPicklist[randomIndex];
+	const tile = buildTile(color);
+
+	colorsPicklist.splice(randomIndex, 1);
+	tilesContainer.appendChild(tile);
+}
+
+    </script>
+</body>
+</html> -->
