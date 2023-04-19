@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create account</title>
+    <style>
+        /* CSS for form elements */
+
+        body {
+            background-image: url(a3.gif);
+        }
+
+        form {
+
+            width: 50%;
+
+            margin-left: 25%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            background-color: #ffffffbb;
+
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+            border-radius: 10px;
+
+            padding-bottom: 30px;
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            margin-bottom: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #cccccc;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        select:focus {
+            outline: none;
+            border: 1px solid #2ecc71;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2ecc71;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+
+        input[type="text"][readonly] {
+            background-color: #f5f5f5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="account-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+
+        <label for="account-type">Account Type:</label>
+        <select id="account-type" name="account-type">
+            <option value="savings">Savings</option>
+            <option value="checking">Checking</option>
+        </select>
+        <br>
+
+        <button type="button" onclick="generateAccountNumber()">Generate Account Number</button>
+        <br>
+
+        <label for="account-number">Account Number:</label>
+        <input type="text" id="account-number" name="account-number" readonly>
+        <br>
+
+        <button type="button" onclick="createAccount()">Create Account</button>
+    </form>
+    <script>
+
+        // Generate a random 8-digit account number
+        function generateAccountNumber() {
+            const accountNumberField = document.getElementById('account-number');
+            const accountNumber = Math.floor(Math.random() * 100000000);
+            accountNumberField.value = accountNumber;
+        }
+
+        // Create a new account with the entered details
+        function createAccount() {
+            const name = document.getElementById('name').value;
+            const address = document.getElementById('address').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const accountType = document.getElementById('account-type').value;
+            const accountNumber = document.getElementById('account-number').value;
+
+            // Create a new account object with the entered details
+            const account = {
+                name: name,
+                address: address,
+                email: email,
+                phone: phone,
+                accountType: accountType,
+                accountNumber: accountNumber,
+                balance: 1000
+            };
+
+            // Save the account object to local storage
+            localStorage.setItem(accountNumber, JSON.stringify(account));
+
+            // Display a success message
+            alert('Account created successfully!');
+
+            // Clear the form fields
+            document.getElementById('name').value = '';
+            document.getElementById('address').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('phone').value = '';
+            document.getElementById('account-type').value = 'savings';
+            document.getElementById('account-number').value = '';
+        }
+
+    </script>
+</body>
+
+</html>
